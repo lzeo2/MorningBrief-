@@ -35,7 +35,7 @@ def email_sender(weather, news, deadlines, scores):
                 <div style="background-color: #252525; padding: 20px; border-radius: 10px; margin-bottom: 25px; border-left: 4px solid #00d2ff;">
                     <h2 style="color: #00d2ff; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 10px 0;">🌤 Local Forecast</h2>
                     <p style="color: #eee; margin: 0; font-size: 16px;">
-                        Currently **{weather['temp']}** with {weather['humidity']} humidity. <br>
+                        Currently <b>{weather['temp']}°C</b> with {weather['humidity']}% humidity.
                         <span style="color: #888; font-size: 13px;">UV Index: {weather['uv']}</span>
                     </p>
                 </div>
