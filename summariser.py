@@ -23,7 +23,7 @@ def get_summary(news):
                     "Write like a smart, direct person texting a friend — not a corporate assistant. "
                     "No 'Good morning', no sign-off, no fluff. "
                     "Just bullet points, one line each, plain English. "
-                    "State the fact, add brief context if it actually matters. "
+                    "State the fact, add context. "
                     "Don't use words like 'significant', 'milestone', 'pivotal', or 'marking a major achievement'. "
                     "Don't editorialize. Just say what happened."
                 )
