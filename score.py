@@ -19,7 +19,8 @@ def get_data(league, date):
     return results
   
 def get_scores():
-  return get_data("eng.1", formatted_date)
-
-  return get_data("esp.1", formatted_date)
+   epl = get_data("eng.1", formatted_date)
+   laliga = get_data("esp.1", formatted_date)
+   return epl + laliga
+  
   
