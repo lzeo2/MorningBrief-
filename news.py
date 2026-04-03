@@ -20,4 +20,3 @@ def get_news():
         results.append(f"{i+1}. {top_five[i]['title']}")
         
     return results
-print(get_news())
