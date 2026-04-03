@@ -1,0 +1,31 @@
+name: Morning Briefing
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 7AM AEST (UTC+10) = 21:00 UTC previous day
+  workflow_dispatch:       # allows manual trigger
+
+jobs:
+  send-briefing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run briefing
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NEWS_KEY: ${{ secrets.NEWS_KEY }}
+          NOTION_KEY: ${{ secrets.NOTION_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          WEATHER_KEY: ${{ secrets.WEATHER_KEY }}
+        run: python gmail.py
