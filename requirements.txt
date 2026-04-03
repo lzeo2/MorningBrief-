@@ -2,4 +2,3 @@ resend
 requests
 openai
 python-dotenv
-notion-client
