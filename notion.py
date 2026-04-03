@@ -25,10 +25,11 @@ payload = {
     }
   }
 }
-response = requests.post(url, headers=headers, json = payload)
 
-data = response.json()
 def get_notion():
+    response = requests.post(url, headers=headers, json = payload)
+
+    data = response.json()
     undonelist = []
     for item in data.get("results", []):
         status_obj = item["properties"].get("Status", {}).get("status", {})
