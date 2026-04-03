@@ -2,7 +2,7 @@ name: Morning Briefing
 
 on:
   schedule:
-    - cron: '43 8 * * *'  # 7AM AEST (UTC+10) = 21:00 UTC previous day
+    - cron: '27 9 * * *'  # 7AM AEST (UTC+10) = 21:00 UTC previous day
   workflow_dispatch:       # allows manual trigger
 
 jobs:
