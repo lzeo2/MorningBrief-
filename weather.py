@@ -14,4 +14,3 @@ def get_weather():
     weather = {"temp": data['current']["temp_c"], "humidity": data['current']["humidity"],"uv":data['current']["uv"]}
     return weather
 
-print(get_weather())
