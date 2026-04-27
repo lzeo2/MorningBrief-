@@ -26,7 +26,7 @@ An automated daily briefing service that compiles weather, news, sports scores, 
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/lzeo2/MorningBrief-
 cd MorningBriefingReview
 ```
 
@@ -153,7 +153,7 @@ api_url = f"https://newsapi.org/v2/top-headlines?sources=your-preferred-source&p
 
 ## License
 
-[License information]
+MIT
 
 ## Contributing
 
